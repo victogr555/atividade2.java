@@ -13,9 +13,9 @@ public class TesteBiblioteca {
         System.out.println("    Testando Emprestimo   ");
         membro1.emprestarLivro(livro1);
         membro1.emprestarLivro(livro2);
-        membro1.emprestarLivro(livro3); // Deve falhar - limite atingido
+        membro1.emprestarLivro(livro3);
 
-        membro2.emprestarLivro(livro2); // Deve falhar - já emprestado
+        membro2.emprestarLivro(livro2);
 
         System.out.println("\n Testando Devoluções");
         membro1.devolverLivro(livro1);
@@ -27,3 +27,4 @@ public class TesteBiblioteca {
         System.out.println("Limite empréstimos: " + BibliotecaUtil.LimiteEmprestimos);
     }
 }
+
